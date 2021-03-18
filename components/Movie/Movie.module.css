@@ -1,0 +1,161 @@
+.margin {
+  padding: 15px;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  max-width: 25%;
+  position: relative;
+}
+
+.movie {
+  height: 500px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px -1px 56px -39px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 10px -1px 56px -39px rgba(0, 0, 0, 0.78);
+  box-shadow: 10px -1px 56px -39px rgba(0, 0, 0, 0.78);
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  height: 55%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.content {
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #030b1c;
+  margin-top: 5px;
+  font-weight: bold;
+  padding: 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.genre {
+  font-size: 16px;
+  color: grey;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overview {
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.star {
+  font-size: 22px;
+  color: rgb(233, 218, 10);
+}
+
+.favorite {
+  position: absolute;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  background-color: #ededed;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.favorite i {
+  font-size: 27px;
+}
+
+.favoriteActive {
+  background: #2fcc72;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .margin {
+    max-width: 33.3%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .margin {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .margin {
+    max-width: 100%;
+    padding: 10px 10px 10px 0;
+  }
+  .movie {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: stretch space-between;
+    align-items: stretch;
+    height: 200px;
+  }
+
+  .img {
+    height: 100%;
+    width: 35%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 55%;
+    font-size: 15px;
+    padding: 10px 0 5px 0;
+  }
+  
+  .genre {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .favorite {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+  }
+
+  .favorite i {
+    font-size: 15px;
+  }
+
+  .overview {
+    width: 90%;
+    font-size: 14px;
+    -webkit-line-clamp: 3;
+    margin-bottom: 25px;
+  }
+
+  .content {
+    width: 65%;
+  }
+}

@@ -1,0 +1,59 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  padding: 5px 0;
+}
+
+.links {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 100px;
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.linkActive {
+  color: #48c774;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.homeFavorite {
+  display: flex;
+}
+
+.home {
+  margin-right: 100px;
+}
+
+.favorite i {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .links {
+    padding: 0 20px;
+  }
+
+  .home {
+    display: none;
+  }
+
+  .favorite span {
+    display: none;
+  }
+}

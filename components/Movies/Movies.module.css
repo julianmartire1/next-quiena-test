@@ -1,0 +1,6 @@
+.movies {
+  margin-left: 16px;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  display: flex;
+}

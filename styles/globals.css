@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.select select {
+  background-color: transparent !important;
+  border-color: black;
+}
+
+.pagination-link.is-current {
+  background-color: grey;
+  border-color: grey;
+  color: #fff;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: black;
+}
